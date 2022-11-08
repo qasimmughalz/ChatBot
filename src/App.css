@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+.App{
+    height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.chat-btn{
+
+    position: absolute;
+    bottom: 0%;
+    right: 2%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.chat-chad_wrap{
+    background-image: url('././Assets/bg-chat.svg') !important;
+    width: 129.28px;
+    height: 129.28px;
+    border-radius: 0px 15px 15px 15px;
+    background: #25292F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5px;
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .chat-chad_wrap span{
+    display: block;
+    background: #FFFFFF;
+    border-radius: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  .chat-chad_wrap span:nth-child(1){
+    width: 9px;
+    animation: spanone 1s infinite alternate 1s;
   }
-}
+  .chat-chad_wrap span:nth-child(2){
+    width: 9px;
+    animation: spantwo 1s infinite alternate 1s;
+  }
+  .chat-chad_wrap span:nth-child(3){
+    width: 9px;
+    height: 47.5px;
+    animation: spanthree 1s infinite alternate 1s;
+  }
+  .chat-chad_wrap span:nth-child(4){
+    width: 9px;
+    height: 27.71px;
+    animation: spantwo 1s infinite alternate 1s;
+  }
+  .chat-chad_wrap span:nth-child(5){
+    width: 9px;
+    height: 10px;
+    animation: spanone 1s infinite alternate 1s;
+  }
+  .chat-chad p{
+    font-family: 'AirbnbCereal_W_Bd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #1D6381;
+    margin-top: 11px;
+    text-align: center;
+  }
+    @keyframes spanone {
+      0% {
+        height:6px;
+      }
+      50% {
+        height: 10px;
+      }
+      100% {
+        height: 14px;
+      }
+    }
+    @keyframes spantwo {
+      0% {
+        height:6px;
+      }
+      50% {
+        height: 20px;
+      }
+      100% {
+        height: 27px;
+      }
+    }
+    @keyframes spanthree {
+      0% {
+        height:6px;
+      }
+      50% {
+        height: 30px;
+      }
+      100% {
+        height: 47.5px;
+      }
+
+    }

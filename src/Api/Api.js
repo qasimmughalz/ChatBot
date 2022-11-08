@@ -1,0 +1,1 @@
+export const URL = 'backend_url'
